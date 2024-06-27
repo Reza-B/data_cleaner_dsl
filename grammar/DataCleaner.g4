@@ -12,6 +12,12 @@ statement
     | logTransformStatement
     | autoCategorizeStatement
     | splitDataStatement
+    | removeDuplicateStatement
+    | dropRowStatement
+    | dropColumnStatement
+    | integrateInconsistentData
+    | encodingStatement
+    | handleOutliersStatement
     ;
 
 // Statements
@@ -23,6 +29,13 @@ standardizeStatement: 'standardize' column ;
 logTransformStatement: 'log_transform' column ;
 autoCategorizeStatement: 'auto_categorize' column 'n_clusters=' number ;
 splitDataStatement: 'split_data' 'train=' number ',' 'validate=' number ',' 'test=' number ;
+// new Statements
+removeDuplicateStatement: 'remove_duplicates';
+dropRowStatement: 'drop_row'  (row )* | ('from' row 'to' row ('exclude' row+)?);
+dropColumnStatement: 'drop_column' column+;
+integrateInconsistentData: 'integrate' option+ 'to' option 'in' column;
+encodingStatement: 'encode' (column+ | 'all' | 'exclude' column+)  'with' method;
+handleOutliersStatement: 'delete_outliers' (column+ | 'all' | 'exclude' column+) 'with' method;
 
 // Options
 path: STRING;
@@ -30,6 +43,9 @@ min_val: NUMBER;
 max_val: NUMBER;
 number: NUMBER;
 column: ID;
+option: ID;
+row: NUMBER;
+method: ID;
 fillMethod: 'mean' | 'median' | 'mode';
 
 // Tokens

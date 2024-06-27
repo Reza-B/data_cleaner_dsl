@@ -8,7 +8,9 @@ class CustomDataCleanerListener(DataCleanerListener):
     def __init__(self, rule_names):
         self.overridden_rules = ['program', 'loadStatement', 'removeRowsMissingStatement', 'fillMissingStatement',
                                  'normalizeStatement', 'standardizeStatement', 'logTransformStatement',
-                                 'autoCategorizeStatement', 'splitDataStatement']
+                                 'autoCategorizeStatement', 'splitDataStatement'"removeDuplicateStatement",
+                                 "dropRowStatement", "dropColumnStatement", "integrateInconsistentData",
+                                 "encodingStatement", "handleOutliersStatement"]
         self.rule_names = rule_names
         self.ast = AST()
 
@@ -43,3 +45,21 @@ class CustomDataCleanerListener(DataCleanerListener):
 
     def exitSplitDataStatement(self, ctx):
         make_ast_subtree(self.ast, ctx, 'splitData', keep_node=True)
+
+    def exitRemoveDuplicateStatement(self, ctx):
+        make_ast_subtree(self.ast, ctx, 'removeDuplicates', keep_node=True)
+
+    def exitDropRowStatement(self, ctx):
+        make_ast_subtree(self.ast, ctx, 'dropRow', keep_node=True)
+
+    def exitDropColumnStatement(self, ctx):
+        make_ast_subtree(self.ast, ctx, 'dropColumn', keep_node=True)
+
+    def exitIntegrateInconsistentData(self, ctx):
+        make_ast_subtree(self.ast, ctx, 'integrate', keep_node=True)
+
+    def exitEncodingStatement(self, ctx):
+        make_ast_subtree(self.ast, ctx, 'encode', keep_node=True)
+
+    def exitHandleOutliersStatement(self, ctx):
+        make_ast_subtree(self.ast, ctx, 'delete_outliers', keep_node=True)

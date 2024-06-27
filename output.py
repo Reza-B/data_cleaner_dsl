@@ -9,4 +9,3 @@ data['column5'] = np.log1p(data['column5'])
 from sklearn.cluster import KMeans
 kmeans = KMeans(n_clusters=3)
 data['column6'] = kmeans.fit_predict(data['column6'].values.reshape(-1, 1))
-train_data, validate_data, test_data = np.split(data.sample(frac=1, random_state=42), [int(0.1*len(data)), int((0.1+0.2)*len(data))])

@@ -6,3 +6,4 @@ standardize column4
 log_transform column5
 auto_categorize column6 n_clusters=3
 split_data train=0.7, validate=0.2, test=0.1
+drop_row 3

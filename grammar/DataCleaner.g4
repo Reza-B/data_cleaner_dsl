@@ -38,15 +38,15 @@ encodingStatement: 'encode' (column+ | 'all' | 'exclude' column+)  'with' method
 handleOutliersStatement: 'delete_outliers' (column+ | 'all' | 'exclude' column+) 'with' method;
 
 // Options
-path: STRING;
-min_val: NUMBER;
-max_val: NUMBER;
-number: NUMBER;
-column: ID;
-option: ID;
-row: NUMBER;
-method: ID;
-fillMethod: 'mean' | 'median' | 'mode';
+path returns[rule_type="str()"]: STRING;
+min_val returns[rule_type="id()"]: NUMBER;
+max_val returns[rule_type="id()"]: NUMBER;
+column returns[rule_type="id()"]: ID;
+option returns[rule_type="id()"]: ID;
+row returns[rule_type="int()"]: NUMBER;
+method returns[rule_type="id()"]: ID;
+number returns[rule_type="int()"]: NUMBER;
+fillMethod returns[rule_type="str()"]: 'mean' | 'median' | 'mode';
 
 // Tokens
 ID: [a-zA-Z_][a-zA-Z_0-9]* ;

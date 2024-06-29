@@ -1,4 +1,4 @@
-# Generated from E:/university/Compiler/DataCleaner/grammar/DataCleaner.g4 by ANTLR 4.13.1
+# Generated from C:/Users/KUIX/Documents/GitHub/data_cleaner_dsl/grammar/DataCleaner.g4 by ANTLR 4.13.1
 from antlr4 import *
 if "." in __name__:
     from .DataCleanerParser import DataCleanerParser
@@ -64,6 +64,36 @@ class DataCleanerVisitor(ParseTreeVisitor):
         return self.visitChildren(ctx)
 
 
+    # Visit a parse tree produced by DataCleanerParser#removeDuplicateStatement.
+    def visitRemoveDuplicateStatement(self, ctx:DataCleanerParser.RemoveDuplicateStatementContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by DataCleanerParser#dropRowStatement.
+    def visitDropRowStatement(self, ctx:DataCleanerParser.DropRowStatementContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by DataCleanerParser#dropColumnStatement.
+    def visitDropColumnStatement(self, ctx:DataCleanerParser.DropColumnStatementContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by DataCleanerParser#integrateInconsistentData.
+    def visitIntegrateInconsistentData(self, ctx:DataCleanerParser.IntegrateInconsistentDataContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by DataCleanerParser#encodingStatement.
+    def visitEncodingStatement(self, ctx:DataCleanerParser.EncodingStatementContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by DataCleanerParser#handleOutliersStatement.
+    def visitHandleOutliersStatement(self, ctx:DataCleanerParser.HandleOutliersStatementContext):
+        return self.visitChildren(ctx)
+
+
     # Visit a parse tree produced by DataCleanerParser#path.
     def visitPath(self, ctx:DataCleanerParser.PathContext):
         return self.visitChildren(ctx)
@@ -79,13 +109,28 @@ class DataCleanerVisitor(ParseTreeVisitor):
         return self.visitChildren(ctx)
 
 
-    # Visit a parse tree produced by DataCleanerParser#number.
-    def visitNumber(self, ctx:DataCleanerParser.NumberContext):
+    # Visit a parse tree produced by DataCleanerParser#column.
+    def visitColumn(self, ctx:DataCleanerParser.ColumnContext):
         return self.visitChildren(ctx)
 
 
-    # Visit a parse tree produced by DataCleanerParser#column.
-    def visitColumn(self, ctx:DataCleanerParser.ColumnContext):
+    # Visit a parse tree produced by DataCleanerParser#option.
+    def visitOption(self, ctx:DataCleanerParser.OptionContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by DataCleanerParser#row.
+    def visitRow(self, ctx:DataCleanerParser.RowContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by DataCleanerParser#method.
+    def visitMethod(self, ctx:DataCleanerParser.MethodContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by DataCleanerParser#number.
+    def visitNumber(self, ctx:DataCleanerParser.NumberContext):
         return self.visitChildren(ctx)
 
 

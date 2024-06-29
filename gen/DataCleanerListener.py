@@ -1,4 +1,4 @@
-# Generated from E:/university/Compiler/DataCleaner/grammar/DataCleaner.g4 by ANTLR 4.13.1
+# Generated from C:/Users/KUIX/Documents/GitHub/data_cleaner_dsl/grammar/DataCleaner.g4 by ANTLR 4.13.1
 from antlr4 import *
 if "." in __name__:
     from .DataCleanerParser import DataCleanerParser
@@ -107,6 +107,60 @@ class DataCleanerListener(ParseTreeListener):
         pass
 
 
+    # Enter a parse tree produced by DataCleanerParser#removeDuplicateStatement.
+    def enterRemoveDuplicateStatement(self, ctx:DataCleanerParser.RemoveDuplicateStatementContext):
+        pass
+
+    # Exit a parse tree produced by DataCleanerParser#removeDuplicateStatement.
+    def exitRemoveDuplicateStatement(self, ctx:DataCleanerParser.RemoveDuplicateStatementContext):
+        pass
+
+
+    # Enter a parse tree produced by DataCleanerParser#dropRowStatement.
+    def enterDropRowStatement(self, ctx:DataCleanerParser.DropRowStatementContext):
+        pass
+
+    # Exit a parse tree produced by DataCleanerParser#dropRowStatement.
+    def exitDropRowStatement(self, ctx:DataCleanerParser.DropRowStatementContext):
+        pass
+
+
+    # Enter a parse tree produced by DataCleanerParser#dropColumnStatement.
+    def enterDropColumnStatement(self, ctx:DataCleanerParser.DropColumnStatementContext):
+        pass
+
+    # Exit a parse tree produced by DataCleanerParser#dropColumnStatement.
+    def exitDropColumnStatement(self, ctx:DataCleanerParser.DropColumnStatementContext):
+        pass
+
+
+    # Enter a parse tree produced by DataCleanerParser#integrateInconsistentData.
+    def enterIntegrateInconsistentData(self, ctx:DataCleanerParser.IntegrateInconsistentDataContext):
+        pass
+
+    # Exit a parse tree produced by DataCleanerParser#integrateInconsistentData.
+    def exitIntegrateInconsistentData(self, ctx:DataCleanerParser.IntegrateInconsistentDataContext):
+        pass
+
+
+    # Enter a parse tree produced by DataCleanerParser#encodingStatement.
+    def enterEncodingStatement(self, ctx:DataCleanerParser.EncodingStatementContext):
+        pass
+
+    # Exit a parse tree produced by DataCleanerParser#encodingStatement.
+    def exitEncodingStatement(self, ctx:DataCleanerParser.EncodingStatementContext):
+        pass
+
+
+    # Enter a parse tree produced by DataCleanerParser#handleOutliersStatement.
+    def enterHandleOutliersStatement(self, ctx:DataCleanerParser.HandleOutliersStatementContext):
+        pass
+
+    # Exit a parse tree produced by DataCleanerParser#handleOutliersStatement.
+    def exitHandleOutliersStatement(self, ctx:DataCleanerParser.HandleOutliersStatementContext):
+        pass
+
+
     # Enter a parse tree produced by DataCleanerParser#path.
     def enterPath(self, ctx:DataCleanerParser.PathContext):
         pass
@@ -134,21 +188,48 @@ class DataCleanerListener(ParseTreeListener):
         pass
 
 
-    # Enter a parse tree produced by DataCleanerParser#number.
-    def enterNumber(self, ctx:DataCleanerParser.NumberContext):
-        pass
-
-    # Exit a parse tree produced by DataCleanerParser#number.
-    def exitNumber(self, ctx:DataCleanerParser.NumberContext):
-        pass
-
-
     # Enter a parse tree produced by DataCleanerParser#column.
     def enterColumn(self, ctx:DataCleanerParser.ColumnContext):
         pass
 
     # Exit a parse tree produced by DataCleanerParser#column.
     def exitColumn(self, ctx:DataCleanerParser.ColumnContext):
+        pass
+
+
+    # Enter a parse tree produced by DataCleanerParser#option.
+    def enterOption(self, ctx:DataCleanerParser.OptionContext):
+        pass
+
+    # Exit a parse tree produced by DataCleanerParser#option.
+    def exitOption(self, ctx:DataCleanerParser.OptionContext):
+        pass
+
+
+    # Enter a parse tree produced by DataCleanerParser#row.
+    def enterRow(self, ctx:DataCleanerParser.RowContext):
+        pass
+
+    # Exit a parse tree produced by DataCleanerParser#row.
+    def exitRow(self, ctx:DataCleanerParser.RowContext):
+        pass
+
+
+    # Enter a parse tree produced by DataCleanerParser#method.
+    def enterMethod(self, ctx:DataCleanerParser.MethodContext):
+        pass
+
+    # Exit a parse tree produced by DataCleanerParser#method.
+    def exitMethod(self, ctx:DataCleanerParser.MethodContext):
+        pass
+
+
+    # Enter a parse tree produced by DataCleanerParser#number.
+    def enterNumber(self, ctx:DataCleanerParser.NumberContext):
+        pass
+
+    # Exit a parse tree produced by DataCleanerParser#number.
+    def exitNumber(self, ctx:DataCleanerParser.NumberContext):
         pass
 
 

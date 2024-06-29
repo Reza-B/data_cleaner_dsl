@@ -16,7 +16,7 @@
         <PerGrammarGenerationSettings>
           <option name="fileName" value="$PROJECT_DIR$/grammar/DataCleaner.g4" />
           <option name="autoGen" value="true" />
-          <option name="outputDir" value="C:\Users\KUIX\Documents\GitHub\data_cleaner_dsl\gen" />
+          <option name="outputDir" value="C:\Users\Aidin\Desktop\Rep\data_cleaner_dsl\gen" />
           <option name="libDir" value="" />
           <option name="encoding" value="" />
           <option name="pkg" value="" />
@@ -29,5 +29,5 @@
   <component name="Black">
     <option name="sdkName" value="Python 3.12 (DataCleaner) (2)" />
   </component>
-  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.12 (data_cleaner_dsl)" project-jdk-type="Python SDK" />
+  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.12 (data_cleaner_dsl-0rr-BVec)" project-jdk-type="Python SDK" />
 </project>

@@ -50,7 +50,7 @@ fillMethod returns[rule_type="str()"]: 'mean' | 'median' | 'mode';
 
 // Tokens
 ID: [a-zA-Z_][a-zA-Z_0-9]* ;
-NUMBER: [0-9]+ ('.' [0-9]+)?;
+NUMBER: [0-9]+;
 STRING: '"' .*? '"' ;
 WS: [ \t\r]+ -> skip ;
 NEWLINE: ('\n' | '\r\n' | '\r') -> skip;

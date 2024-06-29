@@ -5,13 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="eea3c4c4-d332-4896-a2ad-e763c2653703" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/DataCleaner.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/DataCleaner.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/grammar/DataCleaner.g4" beforeDir="false" afterPath="$PROJECT_DIR$/grammar/DataCleaner.g4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gen/DataCleaner.interp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gen/DataCleaner.tokens" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gen/DataCleanerLexer.interp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gen/DataCleanerLexer.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gen/DataCleanerLexer.tokens" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gen/DataCleanerListener.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gen/DataCleanerParser.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gen/DataCleanerVisitor.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/listener/DataCleanerListener.py" beforeDir="false" afterPath="$PROJECT_DIR$/listener/DataCleanerListener.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output.py" beforeDir="false" afterPath="$PROJECT_DIR$/output.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test.datacleaner" beforeDir="false" afterPath="$PROJECT_DIR$/test.datacleaner" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -41,7 +46,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/KUIX/Documents/GitHub/data_cleaner_dsl/gen",
+    "last_opened_file_path": "C:/Users/Aidin/Desktop/Rep/data_cleaner_dsl",
     "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PythonContentEntriesConfigurable"
   }
 }]]></component>

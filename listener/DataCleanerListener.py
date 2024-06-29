@@ -50,6 +50,16 @@ class CustomDataCleanerListener(DataCleanerListener):
         make_ast_subtree(self.ast, ctx, 'removeDuplicates', keep_node=True)
 
     def exitDropRowStatement(self, ctx):
+        for child in ctx.children:
+            print(child.getText())
+        for i, child in enumerate(ctx.children):
+            if child.getText() in "drop_row":
+                print("here")
+                print(f"{i}: {child.getText()}")
+                continue
+            print(f"{i}: {child.getText()}")
+            if child.rule_type != "int()":
+                raise ValueError("Expected ID")
         make_ast_subtree(self.ast, ctx, 'dropRow', keep_node=True)
 
     def exitDropColumnStatement(self, ctx):

@@ -1,4 +1,4 @@
-# Generated from C:/Users/Aidin/Desktop/Rep/data_cleaner_dsl/grammar/DataCleaner.g4 by ANTLR 4.13.1
+# Generated from D:/University/Semester-8/Compiler/Final_Project/data_cleaner_dsl/grammar/DataCleaner.g4 by ANTLR 4.13.1
 from antlr4 import *
 if "." in __name__:
     from .DataCleanerParser import DataCleanerParser
@@ -91,6 +91,11 @@ class DataCleanerVisitor(ParseTreeVisitor):
 
     # Visit a parse tree produced by DataCleanerParser#handleOutliersStatement.
     def visitHandleOutliersStatement(self, ctx:DataCleanerParser.HandleOutliersStatementContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by DataCleanerParser#excludeColumnsStatement.
+    def visitExcludeColumnsStatement(self, ctx:DataCleanerParser.ExcludeColumnsStatementContext):
         return self.visitChildren(ctx)
 
 

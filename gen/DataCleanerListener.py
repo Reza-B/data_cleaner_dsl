@@ -1,4 +1,4 @@
-# Generated from C:/Users/Aidin/Desktop/Rep/data_cleaner_dsl/grammar/DataCleaner.g4 by ANTLR 4.13.1
+# Generated from D:/University/Semester-8/Compiler/Final_Project/data_cleaner_dsl/grammar/DataCleaner.g4 by ANTLR 4.13.1
 from antlr4 import *
 if "." in __name__:
     from .DataCleanerParser import DataCleanerParser
@@ -158,6 +158,15 @@ class DataCleanerListener(ParseTreeListener):
 
     # Exit a parse tree produced by DataCleanerParser#handleOutliersStatement.
     def exitHandleOutliersStatement(self, ctx:DataCleanerParser.HandleOutliersStatementContext):
+        pass
+
+
+    # Enter a parse tree produced by DataCleanerParser#excludeColumnsStatement.
+    def enterExcludeColumnsStatement(self, ctx:DataCleanerParser.ExcludeColumnsStatementContext):
+        pass
+
+    # Exit a parse tree produced by DataCleanerParser#excludeColumnsStatement.
+    def exitExcludeColumnsStatement(self, ctx:DataCleanerParser.ExcludeColumnsStatementContext):
         pass
 
 

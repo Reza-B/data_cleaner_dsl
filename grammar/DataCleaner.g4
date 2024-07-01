@@ -34,8 +34,10 @@ removeDuplicateStatement: 'remove_duplicates';
 dropRowStatement: 'drop_row'  (row )* | ('from' row 'to' row ('exclude' row+)?);
 dropColumnStatement: 'drop_column' column+;
 integrateInconsistentData: 'integrate' option+ 'to' option 'in' column;
-encodingStatement: 'encode' (column+ | 'all' | 'exclude' column+)  'with' method;
-handleOutliersStatement: 'delete_outliers' (column+ | 'all' | 'exclude' column+) 'with' method;
+encodingStatement: 'encode' (column+ | 'all' | excludeColumnsStatement)  'with' method;
+handleOutliersStatement: 'delete_outliers' (column+ | 'all' | excludeColumnsStatement) 'with' method;
+
+excludeColumnsStatement: 'exclude' column+;
 
 // Options
 path returns[rule_type="str()"]: STRING;

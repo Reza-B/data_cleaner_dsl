@@ -1,4 +1,4 @@
-# Generated from C:/Users/Aidin/Desktop/Rep/data_cleaner_dsl/grammar/DataCleaner.g4 by ANTLR 4.13.1
+# Generated from D:/University/Semester-8/Compiler/Final_Project/data_cleaner_dsl/grammar/DataCleaner.g4 by ANTLR 4.13.1
 # encoding: utf-8
 from antlr4 import *
 from io import StringIO
@@ -10,77 +10,76 @@ else:
 
 def serializedATN():
     return [
-        4,1,36,212,2,0,7,0,2,1,7,1,2,2,7,2,2,3,7,3,2,4,7,4,2,5,7,5,2,6,7,
+        4,1,36,210,2,0,7,0,2,1,7,1,2,2,7,2,2,3,7,3,2,4,7,4,2,5,7,5,2,6,7,
         6,2,7,7,7,2,8,7,8,2,9,7,9,2,10,7,10,2,11,7,11,2,12,7,12,2,13,7,13,
         2,14,7,14,2,15,7,15,2,16,7,16,2,17,7,17,2,18,7,18,2,19,7,19,2,20,
-        7,20,2,21,7,21,2,22,7,22,2,23,7,23,2,24,7,24,2,25,7,25,1,0,1,0,1,
-        0,1,1,1,1,5,1,58,8,1,10,1,12,1,61,9,1,1,2,1,2,1,2,1,2,1,2,1,2,1,
-        2,1,2,1,2,1,2,1,2,1,2,1,2,3,2,76,8,2,1,3,1,3,1,3,1,4,1,4,1,4,1,5,
-        1,5,1,5,1,5,1,5,1,6,1,6,1,6,1,6,1,6,1,6,1,6,1,6,1,7,1,7,1,7,1,8,
-        1,8,1,8,1,9,1,9,1,9,1,9,1,9,1,10,1,10,1,10,1,10,1,10,1,10,1,10,1,
-        10,1,10,1,10,1,11,1,11,1,12,1,12,5,12,122,8,12,10,12,12,12,125,9,
-        12,1,12,1,12,1,12,1,12,1,12,1,12,4,12,133,8,12,11,12,12,12,134,3,
-        12,137,8,12,3,12,139,8,12,1,13,1,13,4,13,143,8,13,11,13,12,13,144,
-        1,14,1,14,4,14,149,8,14,11,14,12,14,150,1,14,1,14,1,14,1,14,1,14,
-        1,15,1,15,4,15,160,8,15,11,15,12,15,161,1,15,1,15,1,15,4,15,167,
-        8,15,11,15,12,15,168,3,15,171,8,15,1,15,1,15,1,15,1,16,1,16,4,16,
-        178,8,16,11,16,12,16,179,1,16,1,16,1,16,4,16,185,8,16,11,16,12,16,
-        186,3,16,189,8,16,1,16,1,16,1,16,1,17,1,17,1,18,1,18,1,19,1,19,1,
-        20,1,20,1,21,1,21,1,22,1,22,1,23,1,23,1,24,1,24,1,25,1,25,1,25,0,
-        0,26,0,2,4,6,8,10,12,14,16,18,20,22,24,26,28,30,32,34,36,38,40,42,
-        44,46,48,50,0,1,1,0,28,30,212,0,52,1,0,0,0,2,55,1,0,0,0,4,75,1,0,
-        0,0,6,77,1,0,0,0,8,80,1,0,0,0,10,83,1,0,0,0,12,88,1,0,0,0,14,96,
-        1,0,0,0,16,99,1,0,0,0,18,102,1,0,0,0,20,107,1,0,0,0,22,117,1,0,0,
-        0,24,138,1,0,0,0,26,140,1,0,0,0,28,146,1,0,0,0,30,157,1,0,0,0,32,
-        175,1,0,0,0,34,193,1,0,0,0,36,195,1,0,0,0,38,197,1,0,0,0,40,199,
-        1,0,0,0,42,201,1,0,0,0,44,203,1,0,0,0,46,205,1,0,0,0,48,207,1,0,
-        0,0,50,209,1,0,0,0,52,53,3,2,1,0,53,54,5,0,0,1,54,1,1,0,0,0,55,59,
-        3,6,3,0,56,58,3,4,2,0,57,56,1,0,0,0,58,61,1,0,0,0,59,57,1,0,0,0,
-        59,60,1,0,0,0,60,3,1,0,0,0,61,59,1,0,0,0,62,76,3,8,4,0,63,76,3,10,
-        5,0,64,76,3,12,6,0,65,76,3,14,7,0,66,76,3,16,8,0,67,76,3,18,9,0,
-        68,76,3,20,10,0,69,76,3,22,11,0,70,76,3,24,12,0,71,76,3,26,13,0,
-        72,76,3,28,14,0,73,76,3,30,15,0,74,76,3,32,16,0,75,62,1,0,0,0,75,
-        63,1,0,0,0,75,64,1,0,0,0,75,65,1,0,0,0,75,66,1,0,0,0,75,67,1,0,0,
-        0,75,68,1,0,0,0,75,69,1,0,0,0,75,70,1,0,0,0,75,71,1,0,0,0,75,72,
-        1,0,0,0,75,73,1,0,0,0,75,74,1,0,0,0,76,5,1,0,0,0,77,78,5,1,0,0,78,
-        79,3,34,17,0,79,7,1,0,0,0,80,81,5,2,0,0,81,82,3,40,20,0,82,9,1,0,
-        0,0,83,84,5,3,0,0,84,85,3,40,20,0,85,86,5,4,0,0,86,87,3,50,25,0,
-        87,11,1,0,0,0,88,89,5,5,0,0,89,90,3,40,20,0,90,91,5,6,0,0,91,92,
-        3,36,18,0,92,93,5,7,0,0,93,94,3,38,19,0,94,95,5,8,0,0,95,13,1,0,
-        0,0,96,97,5,9,0,0,97,98,3,40,20,0,98,15,1,0,0,0,99,100,5,10,0,0,
-        100,101,3,40,20,0,101,17,1,0,0,0,102,103,5,11,0,0,103,104,3,40,20,
-        0,104,105,5,12,0,0,105,106,3,48,24,0,106,19,1,0,0,0,107,108,5,13,
-        0,0,108,109,5,14,0,0,109,110,3,48,24,0,110,111,5,7,0,0,111,112,5,
-        15,0,0,112,113,3,48,24,0,113,114,5,7,0,0,114,115,5,16,0,0,115,116,
-        3,48,24,0,116,21,1,0,0,0,117,118,5,17,0,0,118,23,1,0,0,0,119,123,
-        5,18,0,0,120,122,3,44,22,0,121,120,1,0,0,0,122,125,1,0,0,0,123,121,
-        1,0,0,0,123,124,1,0,0,0,124,139,1,0,0,0,125,123,1,0,0,0,126,127,
-        5,19,0,0,127,128,3,44,22,0,128,129,5,20,0,0,129,136,3,44,22,0,130,
-        132,5,21,0,0,131,133,3,44,22,0,132,131,1,0,0,0,133,134,1,0,0,0,134,
-        132,1,0,0,0,134,135,1,0,0,0,135,137,1,0,0,0,136,130,1,0,0,0,136,
-        137,1,0,0,0,137,139,1,0,0,0,138,119,1,0,0,0,138,126,1,0,0,0,139,
-        25,1,0,0,0,140,142,5,22,0,0,141,143,3,40,20,0,142,141,1,0,0,0,143,
-        144,1,0,0,0,144,142,1,0,0,0,144,145,1,0,0,0,145,27,1,0,0,0,146,148,
-        5,23,0,0,147,149,3,42,21,0,148,147,1,0,0,0,149,150,1,0,0,0,150,148,
-        1,0,0,0,150,151,1,0,0,0,151,152,1,0,0,0,152,153,5,20,0,0,153,154,
-        3,42,21,0,154,155,5,24,0,0,155,156,3,40,20,0,156,29,1,0,0,0,157,
-        170,5,25,0,0,158,160,3,40,20,0,159,158,1,0,0,0,160,161,1,0,0,0,161,
-        159,1,0,0,0,161,162,1,0,0,0,162,171,1,0,0,0,163,171,5,26,0,0,164,
-        166,5,21,0,0,165,167,3,40,20,0,166,165,1,0,0,0,167,168,1,0,0,0,168,
-        166,1,0,0,0,168,169,1,0,0,0,169,171,1,0,0,0,170,159,1,0,0,0,170,
-        163,1,0,0,0,170,164,1,0,0,0,171,172,1,0,0,0,172,173,5,4,0,0,173,
-        174,3,46,23,0,174,31,1,0,0,0,175,188,5,27,0,0,176,178,3,40,20,0,
-        177,176,1,0,0,0,178,179,1,0,0,0,179,177,1,0,0,0,179,180,1,0,0,0,
-        180,189,1,0,0,0,181,189,5,26,0,0,182,184,5,21,0,0,183,185,3,40,20,
-        0,184,183,1,0,0,0,185,186,1,0,0,0,186,184,1,0,0,0,186,187,1,0,0,
-        0,187,189,1,0,0,0,188,177,1,0,0,0,188,181,1,0,0,0,188,182,1,0,0,
-        0,189,190,1,0,0,0,190,191,5,4,0,0,191,192,3,46,23,0,192,33,1,0,0,
-        0,193,194,5,33,0,0,194,35,1,0,0,0,195,196,5,32,0,0,196,37,1,0,0,
-        0,197,198,5,32,0,0,198,39,1,0,0,0,199,200,5,31,0,0,200,41,1,0,0,
-        0,201,202,5,31,0,0,202,43,1,0,0,0,203,204,5,32,0,0,204,45,1,0,0,
-        0,205,206,5,31,0,0,206,47,1,0,0,0,207,208,5,32,0,0,208,49,1,0,0,
-        0,209,210,7,0,0,0,210,51,1,0,0,0,14,59,75,123,134,136,138,144,150,
-        161,168,170,179,186,188
+        7,20,2,21,7,21,2,22,7,22,2,23,7,23,2,24,7,24,2,25,7,25,2,26,7,26,
+        1,0,1,0,1,0,1,1,1,1,5,1,60,8,1,10,1,12,1,63,9,1,1,2,1,2,1,2,1,2,
+        1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,3,2,78,8,2,1,3,1,3,1,3,1,4,1,
+        4,1,4,1,5,1,5,1,5,1,5,1,5,1,6,1,6,1,6,1,6,1,6,1,6,1,6,1,6,1,7,1,
+        7,1,7,1,8,1,8,1,8,1,9,1,9,1,9,1,9,1,9,1,10,1,10,1,10,1,10,1,10,1,
+        10,1,10,1,10,1,10,1,10,1,11,1,11,1,12,1,12,5,12,124,8,12,10,12,12,
+        12,127,9,12,1,12,1,12,1,12,1,12,1,12,1,12,4,12,135,8,12,11,12,12,
+        12,136,3,12,139,8,12,3,12,141,8,12,1,13,1,13,4,13,145,8,13,11,13,
+        12,13,146,1,14,1,14,4,14,151,8,14,11,14,12,14,152,1,14,1,14,1,14,
+        1,14,1,14,1,15,1,15,4,15,162,8,15,11,15,12,15,163,1,15,1,15,3,15,
+        168,8,15,1,15,1,15,1,15,1,16,1,16,4,16,175,8,16,11,16,12,16,176,
+        1,16,1,16,3,16,181,8,16,1,16,1,16,1,16,1,17,1,17,4,17,188,8,17,11,
+        17,12,17,189,1,18,1,18,1,19,1,19,1,20,1,20,1,21,1,21,1,22,1,22,1,
+        23,1,23,1,24,1,24,1,25,1,25,1,26,1,26,1,26,0,0,27,0,2,4,6,8,10,12,
+        14,16,18,20,22,24,26,28,30,32,34,36,38,40,42,44,46,48,50,52,0,1,
+        1,0,28,30,208,0,54,1,0,0,0,2,57,1,0,0,0,4,77,1,0,0,0,6,79,1,0,0,
+        0,8,82,1,0,0,0,10,85,1,0,0,0,12,90,1,0,0,0,14,98,1,0,0,0,16,101,
+        1,0,0,0,18,104,1,0,0,0,20,109,1,0,0,0,22,119,1,0,0,0,24,140,1,0,
+        0,0,26,142,1,0,0,0,28,148,1,0,0,0,30,159,1,0,0,0,32,172,1,0,0,0,
+        34,185,1,0,0,0,36,191,1,0,0,0,38,193,1,0,0,0,40,195,1,0,0,0,42,197,
+        1,0,0,0,44,199,1,0,0,0,46,201,1,0,0,0,48,203,1,0,0,0,50,205,1,0,
+        0,0,52,207,1,0,0,0,54,55,3,2,1,0,55,56,5,0,0,1,56,1,1,0,0,0,57,61,
+        3,6,3,0,58,60,3,4,2,0,59,58,1,0,0,0,60,63,1,0,0,0,61,59,1,0,0,0,
+        61,62,1,0,0,0,62,3,1,0,0,0,63,61,1,0,0,0,64,78,3,8,4,0,65,78,3,10,
+        5,0,66,78,3,12,6,0,67,78,3,14,7,0,68,78,3,16,8,0,69,78,3,18,9,0,
+        70,78,3,20,10,0,71,78,3,22,11,0,72,78,3,24,12,0,73,78,3,26,13,0,
+        74,78,3,28,14,0,75,78,3,30,15,0,76,78,3,32,16,0,77,64,1,0,0,0,77,
+        65,1,0,0,0,77,66,1,0,0,0,77,67,1,0,0,0,77,68,1,0,0,0,77,69,1,0,0,
+        0,77,70,1,0,0,0,77,71,1,0,0,0,77,72,1,0,0,0,77,73,1,0,0,0,77,74,
+        1,0,0,0,77,75,1,0,0,0,77,76,1,0,0,0,78,5,1,0,0,0,79,80,5,1,0,0,80,
+        81,3,36,18,0,81,7,1,0,0,0,82,83,5,2,0,0,83,84,3,42,21,0,84,9,1,0,
+        0,0,85,86,5,3,0,0,86,87,3,42,21,0,87,88,5,4,0,0,88,89,3,52,26,0,
+        89,11,1,0,0,0,90,91,5,5,0,0,91,92,3,42,21,0,92,93,5,6,0,0,93,94,
+        3,38,19,0,94,95,5,7,0,0,95,96,3,40,20,0,96,97,5,8,0,0,97,13,1,0,
+        0,0,98,99,5,9,0,0,99,100,3,42,21,0,100,15,1,0,0,0,101,102,5,10,0,
+        0,102,103,3,42,21,0,103,17,1,0,0,0,104,105,5,11,0,0,105,106,3,42,
+        21,0,106,107,5,12,0,0,107,108,3,50,25,0,108,19,1,0,0,0,109,110,5,
+        13,0,0,110,111,5,14,0,0,111,112,3,50,25,0,112,113,5,7,0,0,113,114,
+        5,15,0,0,114,115,3,50,25,0,115,116,5,7,0,0,116,117,5,16,0,0,117,
+        118,3,50,25,0,118,21,1,0,0,0,119,120,5,17,0,0,120,23,1,0,0,0,121,
+        125,5,18,0,0,122,124,3,46,23,0,123,122,1,0,0,0,124,127,1,0,0,0,125,
+        123,1,0,0,0,125,126,1,0,0,0,126,141,1,0,0,0,127,125,1,0,0,0,128,
+        129,5,19,0,0,129,130,3,46,23,0,130,131,5,20,0,0,131,138,3,46,23,
+        0,132,134,5,21,0,0,133,135,3,46,23,0,134,133,1,0,0,0,135,136,1,0,
+        0,0,136,134,1,0,0,0,136,137,1,0,0,0,137,139,1,0,0,0,138,132,1,0,
+        0,0,138,139,1,0,0,0,139,141,1,0,0,0,140,121,1,0,0,0,140,128,1,0,
+        0,0,141,25,1,0,0,0,142,144,5,22,0,0,143,145,3,42,21,0,144,143,1,
+        0,0,0,145,146,1,0,0,0,146,144,1,0,0,0,146,147,1,0,0,0,147,27,1,0,
+        0,0,148,150,5,23,0,0,149,151,3,44,22,0,150,149,1,0,0,0,151,152,1,
+        0,0,0,152,150,1,0,0,0,152,153,1,0,0,0,153,154,1,0,0,0,154,155,5,
+        20,0,0,155,156,3,44,22,0,156,157,5,24,0,0,157,158,3,42,21,0,158,
+        29,1,0,0,0,159,167,5,25,0,0,160,162,3,42,21,0,161,160,1,0,0,0,162,
+        163,1,0,0,0,163,161,1,0,0,0,163,164,1,0,0,0,164,168,1,0,0,0,165,
+        168,5,26,0,0,166,168,3,34,17,0,167,161,1,0,0,0,167,165,1,0,0,0,167,
+        166,1,0,0,0,168,169,1,0,0,0,169,170,5,4,0,0,170,171,3,48,24,0,171,
+        31,1,0,0,0,172,180,5,27,0,0,173,175,3,42,21,0,174,173,1,0,0,0,175,
+        176,1,0,0,0,176,174,1,0,0,0,176,177,1,0,0,0,177,181,1,0,0,0,178,
+        181,5,26,0,0,179,181,3,34,17,0,180,174,1,0,0,0,180,178,1,0,0,0,180,
+        179,1,0,0,0,181,182,1,0,0,0,182,183,5,4,0,0,183,184,3,48,24,0,184,
+        33,1,0,0,0,185,187,5,21,0,0,186,188,3,42,21,0,187,186,1,0,0,0,188,
+        189,1,0,0,0,189,187,1,0,0,0,189,190,1,0,0,0,190,35,1,0,0,0,191,192,
+        5,33,0,0,192,37,1,0,0,0,193,194,5,32,0,0,194,39,1,0,0,0,195,196,
+        5,32,0,0,196,41,1,0,0,0,197,198,5,31,0,0,198,43,1,0,0,0,199,200,
+        5,31,0,0,200,45,1,0,0,0,201,202,5,32,0,0,202,47,1,0,0,0,203,204,
+        5,31,0,0,204,49,1,0,0,0,205,206,5,32,0,0,206,51,1,0,0,0,207,208,
+        7,0,0,0,208,53,1,0,0,0,13,61,77,125,136,138,140,146,152,163,167,
+        176,180,189
     ]
 
 class DataCleanerParser ( Parser ):
@@ -129,23 +128,24 @@ class DataCleanerParser ( Parser ):
     RULE_integrateInconsistentData = 14
     RULE_encodingStatement = 15
     RULE_handleOutliersStatement = 16
-    RULE_path = 17
-    RULE_min_val = 18
-    RULE_max_val = 19
-    RULE_column = 20
-    RULE_option = 21
-    RULE_row = 22
-    RULE_method = 23
-    RULE_number = 24
-    RULE_fillMethod = 25
+    RULE_excludeColumnsStatement = 17
+    RULE_path = 18
+    RULE_min_val = 19
+    RULE_max_val = 20
+    RULE_column = 21
+    RULE_option = 22
+    RULE_row = 23
+    RULE_method = 24
+    RULE_number = 25
+    RULE_fillMethod = 26
 
     ruleNames =  [ "start", "program", "statement", "loadStatement", "removeRowsMissingStatement", 
                    "fillMissingStatement", "normalizeStatement", "standardizeStatement", 
                    "logTransformStatement", "autoCategorizeStatement", "splitDataStatement", 
                    "removeDuplicateStatement", "dropRowStatement", "dropColumnStatement", 
                    "integrateInconsistentData", "encodingStatement", "handleOutliersStatement", 
-                   "path", "min_val", "max_val", "column", "option", "row", 
-                   "method", "number", "fillMethod" ]
+                   "excludeColumnsStatement", "path", "min_val", "max_val", 
+                   "column", "option", "row", "method", "number", "fillMethod" ]
 
     EOF = Token.EOF
     T__0=1
@@ -234,9 +234,9 @@ class DataCleanerParser ( Parser ):
         self.enterRule(localctx, 0, self.RULE_start)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 52
+            self.state = 54
             self.program()
-            self.state = 53
+            self.state = 55
             self.match(DataCleanerParser.EOF)
         except RecognitionException as re:
             localctx.exception = re
@@ -292,15 +292,15 @@ class DataCleanerParser ( Parser ):
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 55
+            self.state = 57
             self.loadStatement()
-            self.state = 59
+            self.state = 61
             self._errHandler.sync(self)
             _la = self._input.LA(1)
             while (((_la) & ~0x3f) == 0 and ((1 << _la) & 181284396) != 0):
-                self.state = 56
+                self.state = 58
                 self.statement()
-                self.state = 61
+                self.state = 63
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
 
@@ -397,72 +397,72 @@ class DataCleanerParser ( Parser ):
         localctx = DataCleanerParser.StatementContext(self, self._ctx, self.state)
         self.enterRule(localctx, 4, self.RULE_statement)
         try:
-            self.state = 75
+            self.state = 77
             self._errHandler.sync(self)
             token = self._input.LA(1)
             if token in [2]:
                 self.enterOuterAlt(localctx, 1)
-                self.state = 62
+                self.state = 64
                 self.removeRowsMissingStatement()
                 pass
             elif token in [3]:
                 self.enterOuterAlt(localctx, 2)
-                self.state = 63
+                self.state = 65
                 self.fillMissingStatement()
                 pass
             elif token in [5]:
                 self.enterOuterAlt(localctx, 3)
-                self.state = 64
+                self.state = 66
                 self.normalizeStatement()
                 pass
             elif token in [9]:
                 self.enterOuterAlt(localctx, 4)
-                self.state = 65
+                self.state = 67
                 self.standardizeStatement()
                 pass
             elif token in [10]:
                 self.enterOuterAlt(localctx, 5)
-                self.state = 66
+                self.state = 68
                 self.logTransformStatement()
                 pass
             elif token in [11]:
                 self.enterOuterAlt(localctx, 6)
-                self.state = 67
+                self.state = 69
                 self.autoCategorizeStatement()
                 pass
             elif token in [13]:
                 self.enterOuterAlt(localctx, 7)
-                self.state = 68
+                self.state = 70
                 self.splitDataStatement()
                 pass
             elif token in [17]:
                 self.enterOuterAlt(localctx, 8)
-                self.state = 69
+                self.state = 71
                 self.removeDuplicateStatement()
                 pass
             elif token in [18, 19]:
                 self.enterOuterAlt(localctx, 9)
-                self.state = 70
+                self.state = 72
                 self.dropRowStatement()
                 pass
             elif token in [22]:
                 self.enterOuterAlt(localctx, 10)
-                self.state = 71
+                self.state = 73
                 self.dropColumnStatement()
                 pass
             elif token in [23]:
                 self.enterOuterAlt(localctx, 11)
-                self.state = 72
+                self.state = 74
                 self.integrateInconsistentData()
                 pass
             elif token in [25]:
                 self.enterOuterAlt(localctx, 12)
-                self.state = 73
+                self.state = 75
                 self.encodingStatement()
                 pass
             elif token in [27]:
                 self.enterOuterAlt(localctx, 13)
-                self.state = 74
+                self.state = 76
                 self.handleOutliersStatement()
                 pass
             else:
@@ -514,9 +514,9 @@ class DataCleanerParser ( Parser ):
         self.enterRule(localctx, 6, self.RULE_loadStatement)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 77
+            self.state = 79
             self.match(DataCleanerParser.T__0)
-            self.state = 78
+            self.state = 80
             self.path()
         except RecognitionException as re:
             localctx.exception = re
@@ -564,9 +564,9 @@ class DataCleanerParser ( Parser ):
         self.enterRule(localctx, 8, self.RULE_removeRowsMissingStatement)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 80
+            self.state = 82
             self.match(DataCleanerParser.T__1)
-            self.state = 81
+            self.state = 83
             self.column()
         except RecognitionException as re:
             localctx.exception = re
@@ -618,13 +618,13 @@ class DataCleanerParser ( Parser ):
         self.enterRule(localctx, 10, self.RULE_fillMissingStatement)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 83
-            self.match(DataCleanerParser.T__2)
-            self.state = 84
-            self.column()
             self.state = 85
-            self.match(DataCleanerParser.T__3)
+            self.match(DataCleanerParser.T__2)
             self.state = 86
+            self.column()
+            self.state = 87
+            self.match(DataCleanerParser.T__3)
+            self.state = 88
             self.fillMethod()
         except RecognitionException as re:
             localctx.exception = re
@@ -680,19 +680,19 @@ class DataCleanerParser ( Parser ):
         self.enterRule(localctx, 12, self.RULE_normalizeStatement)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 88
-            self.match(DataCleanerParser.T__4)
-            self.state = 89
-            self.column()
             self.state = 90
-            self.match(DataCleanerParser.T__5)
+            self.match(DataCleanerParser.T__4)
             self.state = 91
-            self.min_val()
+            self.column()
             self.state = 92
-            self.match(DataCleanerParser.T__6)
+            self.match(DataCleanerParser.T__5)
             self.state = 93
-            self.max_val()
+            self.min_val()
             self.state = 94
+            self.match(DataCleanerParser.T__6)
+            self.state = 95
+            self.max_val()
+            self.state = 96
             self.match(DataCleanerParser.T__7)
         except RecognitionException as re:
             localctx.exception = re
@@ -740,9 +740,9 @@ class DataCleanerParser ( Parser ):
         self.enterRule(localctx, 14, self.RULE_standardizeStatement)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 96
+            self.state = 98
             self.match(DataCleanerParser.T__8)
-            self.state = 97
+            self.state = 99
             self.column()
         except RecognitionException as re:
             localctx.exception = re
@@ -790,9 +790,9 @@ class DataCleanerParser ( Parser ):
         self.enterRule(localctx, 16, self.RULE_logTransformStatement)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 99
+            self.state = 101
             self.match(DataCleanerParser.T__9)
-            self.state = 100
+            self.state = 102
             self.column()
         except RecognitionException as re:
             localctx.exception = re
@@ -844,13 +844,13 @@ class DataCleanerParser ( Parser ):
         self.enterRule(localctx, 18, self.RULE_autoCategorizeStatement)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 102
-            self.match(DataCleanerParser.T__10)
-            self.state = 103
-            self.column()
             self.state = 104
-            self.match(DataCleanerParser.T__11)
+            self.match(DataCleanerParser.T__10)
             self.state = 105
+            self.column()
+            self.state = 106
+            self.match(DataCleanerParser.T__11)
+            self.state = 107
             self.number()
         except RecognitionException as re:
             localctx.exception = re
@@ -901,23 +901,23 @@ class DataCleanerParser ( Parser ):
         self.enterRule(localctx, 20, self.RULE_splitDataStatement)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 107
-            self.match(DataCleanerParser.T__12)
-            self.state = 108
-            self.match(DataCleanerParser.T__13)
             self.state = 109
-            self.number()
+            self.match(DataCleanerParser.T__12)
             self.state = 110
-            self.match(DataCleanerParser.T__6)
+            self.match(DataCleanerParser.T__13)
             self.state = 111
-            self.match(DataCleanerParser.T__14)
-            self.state = 112
             self.number()
-            self.state = 113
+            self.state = 112
             self.match(DataCleanerParser.T__6)
+            self.state = 113
+            self.match(DataCleanerParser.T__14)
             self.state = 114
-            self.match(DataCleanerParser.T__15)
+            self.number()
             self.state = 115
+            self.match(DataCleanerParser.T__6)
+            self.state = 116
+            self.match(DataCleanerParser.T__15)
+            self.state = 117
             self.number()
         except RecognitionException as re:
             localctx.exception = re
@@ -962,7 +962,7 @@ class DataCleanerParser ( Parser ):
         self.enterRule(localctx, 22, self.RULE_removeDuplicateStatement)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 117
+            self.state = 119
             self.match(DataCleanerParser.T__16)
         except RecognitionException as re:
             localctx.exception = re
@@ -1013,47 +1013,47 @@ class DataCleanerParser ( Parser ):
         self.enterRule(localctx, 24, self.RULE_dropRowStatement)
         self._la = 0 # Token type
         try:
-            self.state = 138
+            self.state = 140
             self._errHandler.sync(self)
             token = self._input.LA(1)
             if token in [18]:
                 self.enterOuterAlt(localctx, 1)
-                self.state = 119
+                self.state = 121
                 self.match(DataCleanerParser.T__17)
-                self.state = 123
+                self.state = 125
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
                 while _la==32:
-                    self.state = 120
+                    self.state = 122
                     self.row()
-                    self.state = 125
+                    self.state = 127
                     self._errHandler.sync(self)
                     _la = self._input.LA(1)
 
                 pass
             elif token in [19]:
                 self.enterOuterAlt(localctx, 2)
-                self.state = 126
-                self.match(DataCleanerParser.T__18)
-                self.state = 127
-                self.row()
                 self.state = 128
-                self.match(DataCleanerParser.T__19)
+                self.match(DataCleanerParser.T__18)
                 self.state = 129
                 self.row()
-                self.state = 136
+                self.state = 130
+                self.match(DataCleanerParser.T__19)
+                self.state = 131
+                self.row()
+                self.state = 138
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
                 if _la==21:
-                    self.state = 130
+                    self.state = 132
                     self.match(DataCleanerParser.T__20)
-                    self.state = 132 
+                    self.state = 134 
                     self._errHandler.sync(self)
                     _la = self._input.LA(1)
                     while True:
-                        self.state = 131
+                        self.state = 133
                         self.row()
-                        self.state = 134 
+                        self.state = 136 
                         self._errHandler.sync(self)
                         _la = self._input.LA(1)
                         if not (_la==32):
@@ -1115,15 +1115,15 @@ class DataCleanerParser ( Parser ):
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 140
+            self.state = 142
             self.match(DataCleanerParser.T__21)
-            self.state = 142 
+            self.state = 144 
             self._errHandler.sync(self)
             _la = self._input.LA(1)
             while True:
-                self.state = 141
+                self.state = 143
                 self.column()
-                self.state = 144 
+                self.state = 146 
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
                 if not (_la==31):
@@ -1183,27 +1183,27 @@ class DataCleanerParser ( Parser ):
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 146
+            self.state = 148
             self.match(DataCleanerParser.T__22)
-            self.state = 148 
+            self.state = 150 
             self._errHandler.sync(self)
             _la = self._input.LA(1)
             while True:
-                self.state = 147
+                self.state = 149
                 self.option()
-                self.state = 150 
+                self.state = 152 
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
                 if not (_la==31):
                     break
 
-            self.state = 152
-            self.match(DataCleanerParser.T__19)
-            self.state = 153
-            self.option()
             self.state = 154
-            self.match(DataCleanerParser.T__23)
+            self.match(DataCleanerParser.T__19)
             self.state = 155
+            self.option()
+            self.state = 156
+            self.match(DataCleanerParser.T__23)
+            self.state = 157
             self.column()
         except RecognitionException as re:
             localctx.exception = re
@@ -1223,6 +1223,10 @@ class DataCleanerParser ( Parser ):
 
         def method(self):
             return self.getTypedRuleContext(DataCleanerParser.MethodContext,0)
+
+
+        def excludeColumnsStatement(self):
+            return self.getTypedRuleContext(DataCleanerParser.ExcludeColumnsStatementContext,0)
 
 
         def column(self, i:int=None):
@@ -1259,19 +1263,19 @@ class DataCleanerParser ( Parser ):
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 157
+            self.state = 159
             self.match(DataCleanerParser.T__24)
-            self.state = 170
+            self.state = 167
             self._errHandler.sync(self)
             token = self._input.LA(1)
             if token in [31]:
-                self.state = 159 
+                self.state = 161 
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
                 while True:
-                    self.state = 158
+                    self.state = 160
                     self.column()
-                    self.state = 161 
+                    self.state = 163 
                     self._errHandler.sync(self)
                     _la = self._input.LA(1)
                     if not (_la==31):
@@ -1279,31 +1283,19 @@ class DataCleanerParser ( Parser ):
 
                 pass
             elif token in [26]:
-                self.state = 163
+                self.state = 165
                 self.match(DataCleanerParser.T__25)
                 pass
             elif token in [21]:
-                self.state = 164
-                self.match(DataCleanerParser.T__20)
-                self.state = 166 
-                self._errHandler.sync(self)
-                _la = self._input.LA(1)
-                while True:
-                    self.state = 165
-                    self.column()
-                    self.state = 168 
-                    self._errHandler.sync(self)
-                    _la = self._input.LA(1)
-                    if not (_la==31):
-                        break
-
+                self.state = 166
+                self.excludeColumnsStatement()
                 pass
             else:
                 raise NoViableAltException(self)
 
-            self.state = 172
+            self.state = 169
             self.match(DataCleanerParser.T__3)
-            self.state = 173
+            self.state = 170
             self.method()
         except RecognitionException as re:
             localctx.exception = re
@@ -1323,6 +1315,10 @@ class DataCleanerParser ( Parser ):
 
         def method(self):
             return self.getTypedRuleContext(DataCleanerParser.MethodContext,0)
+
+
+        def excludeColumnsStatement(self):
+            return self.getTypedRuleContext(DataCleanerParser.ExcludeColumnsStatementContext,0)
 
 
         def column(self, i:int=None):
@@ -1359,19 +1355,19 @@ class DataCleanerParser ( Parser ):
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 175
+            self.state = 172
             self.match(DataCleanerParser.T__26)
-            self.state = 188
+            self.state = 180
             self._errHandler.sync(self)
             token = self._input.LA(1)
             if token in [31]:
-                self.state = 177 
+                self.state = 174 
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
                 while True:
-                    self.state = 176
+                    self.state = 173
                     self.column()
-                    self.state = 179 
+                    self.state = 176 
                     self._errHandler.sync(self)
                     _la = self._input.LA(1)
                     if not (_la==31):
@@ -1379,32 +1375,84 @@ class DataCleanerParser ( Parser ):
 
                 pass
             elif token in [26]:
-                self.state = 181
+                self.state = 178
                 self.match(DataCleanerParser.T__25)
                 pass
             elif token in [21]:
-                self.state = 182
-                self.match(DataCleanerParser.T__20)
-                self.state = 184 
-                self._errHandler.sync(self)
-                _la = self._input.LA(1)
-                while True:
-                    self.state = 183
-                    self.column()
-                    self.state = 186 
-                    self._errHandler.sync(self)
-                    _la = self._input.LA(1)
-                    if not (_la==31):
-                        break
-
+                self.state = 179
+                self.excludeColumnsStatement()
                 pass
             else:
                 raise NoViableAltException(self)
 
-            self.state = 190
+            self.state = 182
             self.match(DataCleanerParser.T__3)
-            self.state = 191
+            self.state = 183
             self.method()
+        except RecognitionException as re:
+            localctx.exception = re
+            self._errHandler.reportError(self, re)
+            self._errHandler.recover(self, re)
+        finally:
+            self.exitRule()
+        return localctx
+
+
+    class ExcludeColumnsStatementContext(ParserRuleContext):
+        __slots__ = 'parser'
+
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
+            super().__init__(parent, invokingState)
+            self.parser = parser
+
+        def column(self, i:int=None):
+            if i is None:
+                return self.getTypedRuleContexts(DataCleanerParser.ColumnContext)
+            else:
+                return self.getTypedRuleContext(DataCleanerParser.ColumnContext,i)
+
+
+        def getRuleIndex(self):
+            return DataCleanerParser.RULE_excludeColumnsStatement
+
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterExcludeColumnsStatement" ):
+                listener.enterExcludeColumnsStatement(self)
+
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitExcludeColumnsStatement" ):
+                listener.exitExcludeColumnsStatement(self)
+
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitExcludeColumnsStatement" ):
+                return visitor.visitExcludeColumnsStatement(self)
+            else:
+                return visitor.visitChildren(self)
+
+
+
+
+    def excludeColumnsStatement(self):
+
+        localctx = DataCleanerParser.ExcludeColumnsStatementContext(self, self._ctx, self.state)
+        self.enterRule(localctx, 34, self.RULE_excludeColumnsStatement)
+        self._la = 0 # Token type
+        try:
+            self.enterOuterAlt(localctx, 1)
+            self.state = 185
+            self.match(DataCleanerParser.T__20)
+            self.state = 187 
+            self._errHandler.sync(self)
+            _la = self._input.LA(1)
+            while True:
+                self.state = 186
+                self.column()
+                self.state = 189 
+                self._errHandler.sync(self)
+                _la = self._input.LA(1)
+                if not (_la==31):
+                    break
+
         except RecognitionException as re:
             localctx.exception = re
             self._errHandler.reportError(self, re)
@@ -1448,10 +1496,10 @@ class DataCleanerParser ( Parser ):
     def path(self):
 
         localctx = DataCleanerParser.PathContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 34, self.RULE_path)
+        self.enterRule(localctx, 36, self.RULE_path)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 193
+            self.state = 191
             self.match(DataCleanerParser.STRING)
         except RecognitionException as re:
             localctx.exception = re
@@ -1496,10 +1544,10 @@ class DataCleanerParser ( Parser ):
     def min_val(self):
 
         localctx = DataCleanerParser.Min_valContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 36, self.RULE_min_val)
+        self.enterRule(localctx, 38, self.RULE_min_val)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 195
+            self.state = 193
             self.match(DataCleanerParser.NUMBER)
         except RecognitionException as re:
             localctx.exception = re
@@ -1544,10 +1592,10 @@ class DataCleanerParser ( Parser ):
     def max_val(self):
 
         localctx = DataCleanerParser.Max_valContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 38, self.RULE_max_val)
+        self.enterRule(localctx, 40, self.RULE_max_val)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 197
+            self.state = 195
             self.match(DataCleanerParser.NUMBER)
         except RecognitionException as re:
             localctx.exception = re
@@ -1592,10 +1640,10 @@ class DataCleanerParser ( Parser ):
     def column(self):
 
         localctx = DataCleanerParser.ColumnContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 40, self.RULE_column)
+        self.enterRule(localctx, 42, self.RULE_column)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 199
+            self.state = 197
             self.match(DataCleanerParser.ID)
         except RecognitionException as re:
             localctx.exception = re
@@ -1640,10 +1688,10 @@ class DataCleanerParser ( Parser ):
     def option(self):
 
         localctx = DataCleanerParser.OptionContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 42, self.RULE_option)
+        self.enterRule(localctx, 44, self.RULE_option)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 201
+            self.state = 199
             self.match(DataCleanerParser.ID)
         except RecognitionException as re:
             localctx.exception = re
@@ -1688,10 +1736,10 @@ class DataCleanerParser ( Parser ):
     def row(self):
 
         localctx = DataCleanerParser.RowContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 44, self.RULE_row)
+        self.enterRule(localctx, 46, self.RULE_row)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 203
+            self.state = 201
             self.match(DataCleanerParser.NUMBER)
         except RecognitionException as re:
             localctx.exception = re
@@ -1736,10 +1784,10 @@ class DataCleanerParser ( Parser ):
     def method(self):
 
         localctx = DataCleanerParser.MethodContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 46, self.RULE_method)
+        self.enterRule(localctx, 48, self.RULE_method)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 205
+            self.state = 203
             self.match(DataCleanerParser.ID)
         except RecognitionException as re:
             localctx.exception = re
@@ -1784,10 +1832,10 @@ class DataCleanerParser ( Parser ):
     def number(self):
 
         localctx = DataCleanerParser.NumberContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 48, self.RULE_number)
+        self.enterRule(localctx, 50, self.RULE_number)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 207
+            self.state = 205
             self.match(DataCleanerParser.NUMBER)
         except RecognitionException as re:
             localctx.exception = re
@@ -1830,11 +1878,11 @@ class DataCleanerParser ( Parser ):
     def fillMethod(self):
 
         localctx = DataCleanerParser.FillMethodContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 50, self.RULE_fillMethod)
+        self.enterRule(localctx, 52, self.RULE_fillMethod)
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 209
+            self.state = 207
             _la = self._input.LA(1)
             if not((((_la) & ~0x3f) == 0 and ((1 << _la) & 1879048192) != 0)):
                 self._errHandler.recoverInline(self)

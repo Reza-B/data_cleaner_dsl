@@ -1,10 +1,2 @@
 load "data.csv"
-remove_rows_missing column1
-fill_missing column2 with mean
-normalize column3 to_range(0, 1)
-standardize column4
-log_transform column5
-auto_categorize column6 n_clusters=3
-split_data train=0.7, validate=0.2, test=0.1
-drop_row asdf 3 4
-drop_column asdf as 5
+delete_outliers exclude price age with IQR

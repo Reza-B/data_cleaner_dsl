@@ -1,11 +1,13 @@
 import pandas as pd
 import numpy as np
 data = pd.read_csv("data.csv")
-data = data.dropna(subset=['column1'])
-data['column2'] = data['column2'].fillna(data['column2'].mean())
-data['column3'] = (data['column3'] - data['column3'].min()) / (data['column3'].max() - data['column3'].min()) * (1 - 0) + 0
-data['column4'] = (data['column4'] - data['column4'].mean()) / data['column4'].std()
-data['column5'] = np.log1p(data['column5'])
-from sklearn.cluster import KMeans
-kmeans = KMeans(n_clusters=3)
-data['column6'] = kmeans.fit_predict(data['column6'].values.reshape(-1, 1))
+columns_to_delete_outlier = [col for col in data.columns if col not in ['age', 'price']]
+
+for col in columns_to_delete_outlier:
+    Q1 = data[col].quantile(0.25)
+    Q3 = data[col].quantile(0.75)
+    IQR = Q3 - Q1
+    lower_bound = Q1 - 1.5 * IQR
+    upper_bound = Q3 + 1.5 * IQR
+    data = data[(data[col] >= lower_bound) & (data[col] <= upper_bound)]
+            

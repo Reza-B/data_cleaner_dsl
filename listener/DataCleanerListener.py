@@ -10,7 +10,7 @@ class CustomDataCleanerListener(DataCleanerListener):
                                  'normalizeStatement', 'standardizeStatement', 'logTransformStatement',
                                  'autoCategorizeStatement', 'splitDataStatement'"removeDuplicateStatement",
                                  "dropRowStatement", "dropColumnStatement", "integrateInconsistentData",
-                                 "encodingStatement", "handleOutliersStatement"]
+                                 "encodingStatement", "handleOutliersStatement", "excludeColumnsStatement"]
         self.rule_names = rule_names
         self.ast = AST()
 
@@ -73,3 +73,6 @@ class CustomDataCleanerListener(DataCleanerListener):
 
     def exitHandleOutliersStatement(self, ctx):
         make_ast_subtree(self.ast, ctx, 'delete_outliers', keep_node=True)
+
+    def exitExcludeColumnsStatement(self, ctx):
+        make_ast_subtree(self.ast, ctx, 'exclude_columns', keep_node=True)

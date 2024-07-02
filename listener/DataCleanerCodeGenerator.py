@@ -76,7 +76,8 @@ class DataCleanerCodeGenerator:
 
     def generate_remove_rows_missing_code(self):
         column = self.operand_stack.pop()
-        self.code_stack.append(f"data = data.dropna(subset=['{column}'])")
+        self.code_stack.append(f"""data = data.dropna(subset=['{column}'])
+data.reset_index(drop=True, inplace=True)""")
 
     def generate_fill_missing_code(self):
         method = self.operand_stack.pop()

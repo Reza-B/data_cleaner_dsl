@@ -56,7 +56,7 @@ class CustomDataCleanerListener(DataCleanerListener):
             if child.getText() in "drop_row":
                 # print(f"{i}: {child.getText()}")
                 continue
-            print(f"{i}: {child.getText()}")
+            # print(f"{i}: {child.getText()}")
             if child.rule_type != "int()":
                 raise ValueError("Expected ID")
         make_ast_subtree(self.ast, ctx, 'dropRow', keep_node=True)

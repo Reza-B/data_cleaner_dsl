@@ -15,6 +15,9 @@ class DataCleanerCodeGenerator:
             return True
 
     def generate_code(self, traversal):
+        def print_csv():
+            self.code_stack.append("print(data)")
+
         def csv_save():
             self.code_stack.append("data.to_csv('cleaned_data.csv', index=False)")
         for node in traversal:
@@ -25,6 +28,7 @@ class DataCleanerCodeGenerator:
                 self.operand_stack.append(label)
 
         result = ''
+        print_csv()
         csv_save()
         for code_string in self.code_stack:
             if code_string is not None:
@@ -121,8 +125,7 @@ class DataCleanerCodeGenerator:
         drop_list = []
         while len(self.operand_stack):
             drop_list.append(int(self.operand_stack.pop()))
-
-        self.code_stack.append(f"data = data.drop({drop_list})")
+        self.code_stack.append(f"data = data.drop({[number-1 for number in drop_list]})")
 
     def generate_drop_column_code(self):
         drop_list = []

@@ -1,4 +1,4 @@
-# Generated from D:/University/Semester-8/Compiler/Final_Project/data_cleaner_dsl/grammar/DataCleaner.g4 by ANTLR 4.13.1
+# Generated from /home/h00man/University/Compiler/project/data_cleaner_dsl/grammar/DataCleaner.g4 by ANTLR 4.13.1
 from antlr4 import *
 if "." in __name__:
     from .DataCleanerParser import DataCleanerParser

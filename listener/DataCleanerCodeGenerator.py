@@ -4,10 +4,13 @@ class DataCleanerCodeGenerator:
                              'normalize', 'standardize', 'logTransform',
                              'autoCategorize', 'splitData', 'remove_duplicates',
                              'dropRow', 'dropColumn', 'integrate', 'encode',
-                             'exclude_columns', 'delete_outliers', 'program'] #add grammar rule
+                             'exclude_columns', 'delete_outliers', 'program']
         self.operand_stack = []
         self.code_stack = []
 
+    def csv_save(self, name):
+        self.code_stack.append(f"data.to_csv('{name}.csv', index=False)")
+        
     def is_operand(self, item):
         if item in self.non_operands:
             return False
@@ -18,8 +21,6 @@ class DataCleanerCodeGenerator:
         def print_csv():
             self.code_stack.append("print(data)")
 
-        def csv_save():
-            self.code_stack.append("data.to_csv('cleaned_data.csv', index=False)")
         for node in traversal:
             label = node['label']
             if not self.is_operand(label):
@@ -29,7 +30,7 @@ class DataCleanerCodeGenerator:
 
         result = ''
         print_csv()
-        csv_save()
+        self.csv_save('cleaned_data')
         for code_string in self.code_stack:
             if code_string is not None:
                 result += code_string + "\n"
@@ -108,16 +109,21 @@ data.reset_index(drop=True, inplace=True)""")
     def generate_auto_categorize_code(self):
         clusters = self.operand_stack.pop()
         column = self.operand_stack.pop()
+
         self.code_stack.append(f"from sklearn.cluster import KMeans")
-        self.code_stack.append(f"kmeans = KMeans(n_clusters={clusters})")
-        self.code_stack.append(f"data['{column}'] = kmeans.fit_predict(data['{column}'].values.reshape(-1, 1))")
+        self.code_stack.append("try:")
+        self.code_stack.append(f"    kmeans = KMeans(n_clusters={clusters})")
+        self.code_stack.append(f"    data['{column}'] = kmeans.fit_predict(data['{column}'].values.reshape(-1, 1))")
+        self.code_stack.append("except:")
+        self.code_stack.append(f"    print('Invalid Data!')")
 
     def generate_split_data_code(self):
-        train_ratio = self.operand_stack.pop()
-        validate_ratio = self.operand_stack.pop()
-        test_ratio = self.operand_stack.pop()
+        test_ratio = int(self.operand_stack.pop()) / 100
+        train_ratio = int(self.operand_stack.pop()) / 100
 
-        self.code_stack.append(f"train_data, validate_data, test_data = np.split(data.sample(frac=1, random_state=42), [int({train_ratio}*len(data)), int(({train_ratio}+{validate_ratio})*len(data))])")
+        self.code_stack.append(f"""train_data, test_data = np.split(data.sample(frac=1, random_state=42), [int(r * len(data)) for r in np.cumsum([{train_ratio}, {test_ratio}][:-1])])
+train_data.to_csv('train_data.csv', index=False)
+test_data.to_csv('test_data.csv', index=False)""")
 
     def generate_remove_duplicate_code(self):
         self.code_stack.append("data = data.drop_duplicates()")

@@ -28,7 +28,7 @@ normalizeStatement: 'normalize' column 'to_range(' min_val ',' max_val ')' ;
 standardizeStatement: 'standardize' column ;
 logTransformStatement: 'log_transform' column ;
 autoCategorizeStatement: 'auto_categorize' column 'n_clusters=' number ;
-splitDataStatement: 'split_data' 'train=' number ',' 'validate=' number ',' 'test=' number ;
+splitDataStatement: 'split_data' 'train=' number ',' 'test=' number ;
 // new Statements
 removeDuplicateStatement: 'remove_duplicates';
 dropRowStatement: 'drop_row'  (row )* | ('from' row 'to' row ('exclude' row+)?);

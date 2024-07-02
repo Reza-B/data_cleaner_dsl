@@ -8,7 +8,7 @@ class CustomDataCleanerListener(DataCleanerListener):
     def __init__(self, rule_names):
         self.overridden_rules = ['program', 'loadStatement', 'removeRowsMissingStatement', 'fillMissingStatement',
                                  'normalizeStatement', 'standardizeStatement', 'logTransformStatement',
-                                 'autoCategorizeStatement', 'splitDataStatement'"removeDuplicateStatement",
+                                 'autoCategorizeStatement', 'splitDataStatement', "removeDuplicateStatement",
                                  "dropRowStatement", "dropColumnStatement", "integrateInconsistentData",
                                  "encodingStatement", "handleOutliersStatement", "excludeColumnsStatement"]
         self.rule_names = rule_names

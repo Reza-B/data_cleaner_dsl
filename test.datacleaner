@@ -1,2 +1,43 @@
-load "data.csv"
-delete_outliers exclude price age with IQR
+// Load the sample data
+load "sample_data.csv"
+
+// Remove rows with missing values in 'age' column
+remove_rows_missing age
+
+// Fill missing values in 'salary' column with mean
+fill_missing salary with mean
+
+// Normalize 'salary' column to range 0 to 1
+normalize salary to_range(0, 1)
+
+// Standardize the 'age' column
+standardize age
+
+// Log transform the 'experience' column
+log_transform experience
+
+// Auto categorize the 'department' column into 3 clusters
+// auto_categorize department n_clusters=3
+
+// Split data into 70% training, 15% validation, and 15% testing sets
+split_data train=70, validate=15, test=15
+
+// Remove duplicate rows
+remove_duplicates
+
+// Drop specific rows (e.g., 2nd and 5th rows)
+// should fix:
+// drop_row 2 5
+
+// Drop specific columns (e.g., 'id' and 'department')
+drop_column id
+
+// Integrate inconsistent data in 'department' column
+integrate HR IT to Finance in department
+
+// Encode all columns with one-hot encoding
+encode all with one_hot
+
+// Delete outliers in 'salary' column using IQR method
+delete_outliers salary with IQR
+

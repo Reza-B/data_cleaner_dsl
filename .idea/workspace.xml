@@ -8,16 +8,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/DataCleaner.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/DataCleaner.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gen/DataCleaner.interp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gen/DataCleaner.tokens" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gen/DataCleanerLexer.interp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gen/DataCleanerLexer.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gen/DataCleanerLexer.tokens" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gen/DataCleanerListener.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gen/DataCleanerParser.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gen/DataCleanerVisitor.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/listener/DataCleanerListener.py" beforeDir="false" afterPath="$PROJECT_DIR$/listener/DataCleanerListener.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.datacleaner" beforeDir="false" afterPath="$PROJECT_DIR$/test.datacleaner" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataCleanerCodeGenerator.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +37,8 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/Aidin/Desktop/Rep/data_cleaner_dsl",
+    "last_opened_file_path": "/home/h00man/University/Compiler/project/data_cleaner_dsl/grammar",
+    "node.js.selected.package.tslint": "(autodetect)",
     "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PythonContentEntriesConfigurable"
   }
 }]]></component>
@@ -64,6 +56,7 @@
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />

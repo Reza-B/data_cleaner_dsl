@@ -15,15 +15,17 @@ class DataCleanerCodeGenerator:
             return True
 
     def generate_code(self, traversal):
+        def csv_save():
+            self.code_stack.append("data.to_csv('cleaned_data.csv', index=False)")
         for node in traversal:
             label = node['label']
-            #print(label)
             if not self.is_operand(label):
                 self.generate_code_based_on_non_operand(label)
             else:
                 self.operand_stack.append(label)
 
         result = ''
+        csv_save()
         for code_string in self.code_stack:
             if code_string is not None:
                 result += code_string + "\n"
@@ -76,11 +78,11 @@ class DataCleanerCodeGenerator:
         method = self.operand_stack.pop()
         column = self.operand_stack.pop()
         if method == "mean":
-            self.code_stack.append(f"data['{column}'] = data['{column}'].fillna(data['{column}'].mean())")
+            self.code_stack.append(f"data['{column}'] = data['{column}'].fillna(round(data['{column}'].mean(), 2))")
         elif method == "median":
-            self.code_stack.append(f"data['{column}'] = data['{column}'].fillna(data['{column}'].median())")
+            self.code_stack.append(f"data['{column}'] = data['{column}'].fillna(round(data['{column}'].median(), 2))")
         elif method == "mode":
-            self.code_stack.append(f"data['{column}'] = data['{column}'].fillna(data['{column}'].mode()[0])")
+            self.code_stack.append(f"data['{column}'] = data['{column}'].fillna(round(data['{column}'].mode()[0], 2)")
 
     def generate_normalize_code(self):
         max_val = self.operand_stack.pop()

@@ -19,6 +19,7 @@ class DataCleanerCodeGenerator:
 
     def generate_code(self, traversal):
         def print_csv():
+            self.code_stack.append("\n# print & save")
             self.code_stack.append("print(data)")
 
         for node in traversal:
@@ -77,6 +78,7 @@ class DataCleanerCodeGenerator:
 
     def generate_remove_rows_missing_code(self):
         column = self.operand_stack.pop()
+        self.code_stack.append(f"\n# remove missing rows")
         self.code_stack.append(f"""data = data.dropna(subset=['{column}'])
 data.reset_index(drop=True, inplace=True)""")
 
@@ -84,25 +86,31 @@ data.reset_index(drop=True, inplace=True)""")
         method = self.operand_stack.pop()
         column = self.operand_stack.pop()
         if method == "mean":
+            self.code_stack.append(f"\n# fill missing with mean")
             self.code_stack.append(f"data['{column}'] = data['{column}'].fillna(round(data['{column}'].mean(), 2))")
         elif method == "median":
+            self.code_stack.append(f"\n# fill missing with median")
             self.code_stack.append(f"data['{column}'] = data['{column}'].fillna(round(data['{column}'].median(), 2))")
         elif method == "mode":
+            self.code_stack.append(f"\n# fill missing with mode")
             self.code_stack.append(f"data['{column}'] = data['{column}'].fillna(round(data['{column}'].mode()[0], 2)")
 
     def generate_normalize_code(self):
         max_val = self.operand_stack.pop()
         min_val = self.operand_stack.pop()
         column = self.operand_stack.pop()
+        self.code_stack.append(f"\n# normalize column")
         self.code_stack.append(f"data['{column}'] = (data['{column}'] - data['{column}'].min()) / (data['{column}'].max() - data['{column}'].min()) * ({max_val} - {min_val}) + {min_val}")
 
     def generate_standardize_code(self):
         column = self.operand_stack.pop()
+        self.code_stack.append(f"\n# standardize column")
         self.code_stack.append(f"data['{column}'] = (data['{column}'] - data['{column}'].mean()) / data['{column}'].std()")
 
 
     def generate_log_transform_code(self):
         column = self.operand_stack.pop()
+        self.code_stack.append(f"\n# logarithm transform column")
         self.code_stack.append(f"data['{column}'] = np.log1p(data['{column}'])")
 
 
@@ -110,6 +118,7 @@ data.reset_index(drop=True, inplace=True)""")
         clusters = self.operand_stack.pop()
         column = self.operand_stack.pop()
 
+        self.code_stack.append(f"\n# auto categorize column")
         self.code_stack.append(f"from sklearn.cluster import KMeans")
         self.code_stack.append("try:")
         self.code_stack.append(f"    kmeans = KMeans(n_clusters={clusters})")
@@ -121,23 +130,29 @@ data.reset_index(drop=True, inplace=True)""")
         test_ratio = int(self.operand_stack.pop()) / 100
         train_ratio = int(self.operand_stack.pop()) / 100
 
+        self.code_stack.append(f"\n# split data")
         self.code_stack.append(f"""train_data, test_data = np.split(data.sample(frac=1, random_state=42), [int(r * len(data)) for r in np.cumsum([{train_ratio}, {test_ratio}][:-1])])
 train_data.to_csv('train_data.csv', index=False)
 test_data.to_csv('test_data.csv', index=False)""")
 
     def generate_remove_duplicate_code(self):
+        self.code_stack.append(f"\n# remove duplicate")
         self.code_stack.append("data = data.drop_duplicates()")
 
     def generate_drop_row_code(self):
         drop_list = []
         while len(self.operand_stack):
             drop_list.append(int(self.operand_stack.pop()))
+
+        self.code_stack.append(f"\n# drop row")
         self.code_stack.append(f"data = data.drop({[number-1 for number in drop_list]})")
 
     def generate_drop_column_code(self):
         drop_list = []
         while len(self.operand_stack):
             drop_list.append(self.operand_stack.pop())
+
+        self.code_stack.append(f"\n# drop column")
         self.code_stack.append(f"data = data.drop(columns={drop_list})")
 
     def generate_integrate_inconsistent_data_code(self):
@@ -147,6 +162,7 @@ test_data.to_csv('test_data.csv', index=False)""")
         while len(self.operand_stack):
             inconsistent_values.append(self.operand_stack.pop())
 
+        self.code_stack.append(f"\n# integrate inconsistent")
         self.code_stack.append(f"data['{column_name}'] = data['{column_name}'].replace({inconsistent_values}, '{consistent_value}')")
 
     def generate_encoding_code(self):
@@ -160,7 +176,7 @@ test_data.to_csv('test_data.csv', index=False)""")
         columns = []
         if not len(other_params):
             all_columns = True
-
+        self.code_stack.append(f"\n# encode")
         if not all_columns:
             param = other_params[0]
             if param.startswith("exclude_columns"):
@@ -181,6 +197,7 @@ test_data.to_csv('test_data.csv', index=False)""")
                 self.code_stack.append(f"data = pd.get_dummies(columns={columns})")
 
     def generate_delete_outliers_code(self):
+        self.code_stack.append(f"\n# delete outliers")
         method = self.operand_stack.pop()
         other_params = []
         while len(self.operand_stack):
@@ -224,4 +241,5 @@ for col in columns_to_delete_outlier:
         while len(self.operand_stack):
             excluded_columns.append(self.operand_stack.pop())
 
+        self.code_stack.append(f"\n# excluded columns")
         self.operand_stack.append(f"exclude_columns({excluded_columns})")

@@ -1,26 +1,26 @@
 // Load the sample data
 load "sample_data.csv"
 
-// Remove rows with missing values in 'age' column
-remove_rows_missing age
+// Remove rows with missing values in 'salary' column
+remove_rows_missing salary
 
 // Drop specific rows (e.g., 2nd and 5th rows)
 drop_row 5
 
 // Remove duplicate rows
-// remove_duplicates
+remove_duplicates
 
 // Fill missing values in 'salary' column with mean
 fill_missing salary with mean
 
 // Normalize 'salary' column to range 0 to 1
-// normalize salary to_range(0, 1)
+normalize salary to_range(0, 1)
 
 // Standardize the 'tax' column
-// standardize tax
+standardize tax
 
 // Logarithm transform the 'experience' column
-// log_transform experience
+log_transform experience
 
 // Auto categorize the 'salary' column into 3 clusters
 auto_categorize salary n_clusters=3
@@ -29,13 +29,13 @@ auto_categorize salary n_clusters=3
 split_data train=70 , test=30
 
 // Integrate inconsistent data in 'department' column
-// integrate IT to Finance in department
+integrate IT to Finance in department
 
 // Delete outliers in 'salary' column using IQR method
 delete_outliers salary with IQR
 
 // Drop specific columns (e.g., 'id' and 'department')
-// drop_column id
+drop_column id
 
 // Encode all columns with one-hot encoding
 encode all with one_hot

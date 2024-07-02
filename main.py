@@ -47,3 +47,5 @@ if __name__ == '__main__':
     argparser.add_argument('-o', '--output', help='Output path', default=r'output.py')
     args = argparser.parse_args()
     main(args)
+    exec(open('output.py').read())
+
